@@ -19,7 +19,7 @@ CREATE OR REPLACE VIEW vw_bancos_agencias (
             banco.nome AS banco_nome,
             agencia.numero AS agencia_numero,
             agencia.nome AS agencia_nome,
-            agencia.ativo AS agencia_ativo
+            agencia.ativo AS agencia_ativo1
     FROM banco
     LEFT JOIN agencia ON agencia.banco_numero = banco.numero
 );
